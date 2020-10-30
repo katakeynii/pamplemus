@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +10,56 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --header-bg: #ff6252
+}
+@font-face {
+  font-family: 'RobotoMono-Bold';
+  src: local('RobotoMono-Bold'), url(./assets/fonts/RobotoMono-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoMono-ExtraLight';
+  src: local('RobotoMono-ExtraLight'), url(./assets/fonts/RobotoMono-ExtraLight.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoMono-Light';
+  src: local('RobotoMono-Light'), url(./assets/fonts/RobotoMono-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoMono-Medium';
+  src: local('RobotoMono-Medium'), url(./assets/fonts/RobotoMono-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoMono-Thin';
+  src: local('RobotoMono-Thin'), url(./assets/fonts/RobotoMono-Thin.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'RobotoMono-Regular';
+  src: local('RobotoMono-Regular'), url(./assets/fonts/RobotoMono-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IOF-Black';
+  src: local('IOF-Black'), url(./assets/fonts/TT\ Supermolot\ Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'IOF-Bold';
+  src: local('IOF-Bold'), url(./assets/fonts/TT\ Supermolot\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'IOF-ExtBold';
+  src: local('IOF-Bold'), url(./assets/fonts/TTSupermolotNeue-ExtraBold.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'IOF-ExtBold2';
+  src: local('IOF-Bold'), url(./assets/fonts/TTSupermolotNeue-ExtraBold.otf) format('opentype');
 }

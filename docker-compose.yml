@@ -1,0 +1,18 @@
+version: '3'
+volumes:
+  app_volume: {}
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+
+    # entrypoint: ./docker-entrypoint.sh
+    volumes:
+      - ./build:/var/www/html
+      # - .:/usr/src/app
+    ports:
+      - 8088:80
+
+
