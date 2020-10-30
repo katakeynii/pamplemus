@@ -345,7 +345,7 @@ export default class App extends Component {
           </div>
 
         </header>
-        <section className="portfolio-container">
+        {/* <section className="portfolio-container">
           {
             images.map(item => {
               var randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
@@ -357,7 +357,7 @@ export default class App extends Component {
               )
             })
           }
-        </section>
+        </section> */}
       </div>
     );
   }
