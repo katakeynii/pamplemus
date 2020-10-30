@@ -200,7 +200,13 @@ width: 100px;
 .mobilepam-menu, #mobilemenu{
   display: none;
 }
-@media (max-width: 800px) {
+
+@media (min-width: 1024px) and ( max-width: 1280px) {
+  .resume-wrapper{
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
   #world{
     display: none;
   }

@@ -28,13 +28,28 @@ const colors = {
   peapl: "#ffbbba",
   pulp: "#fdc556"
 }
-const width = 1000, height = 600;
+const checkInSize = (x1, x2) => (window.innerWidth >= x1 && window.innerWidth <= x2)
+
+let pheight = 560, pwidth = 610;
+if(checkInSize(790, 810)){
+  pheight = 400;
+  pwidth= 450
+}
+const width = 1000, height = pheight;
+
 const PamImage = () => {
   var clientWidth = document.getElementById('world').clientWidth;
+var clientHeight = document.getElementById('world').clientHeight;
+
   let w = (clientWidth / 2) - 305;
   // const [image] = useImage('https://konvajs.org/assets/lion.png');
   const [image] = useImage(pam);
-  return <KonvaImage x={w-90} y={40}  height={560}  width={610}  image={image} />;
+  let pheight = 560, pwidth = 610;
+  if(checkInSize(790, 810)){
+    pheight = clientHeight;
+    pwidth= 328;
+  }
+  return <KonvaImage x={w-90} y={40}  height={pheight}  width={pwidth}  image={image} />;
 };
 
 const Tweet = () => {
@@ -345,7 +360,7 @@ export default class App extends Component {
           </div>
 
         </header>
-        {/* <section className="portfolio-container">
+        <section className="portfolio-container">
           {
             images.map(item => {
               var randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
@@ -357,7 +372,7 @@ export default class App extends Component {
               )
             })
           }
-        </section> */}
+        </section>
       </div>
     );
   }
